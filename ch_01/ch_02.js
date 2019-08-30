@@ -6,14 +6,14 @@
 * that argument.
 
 * > const three = identityf(3);
-* > three()		// 3
+* > three()   // 3
 
 */
 
 function identityf(arg) {
-	return function() {
-		return arg;
-	}
+  return function() {
+    return arg;
+  }
 }
 
 let three = identityf(3);

@@ -25,7 +25,7 @@ $ git clone https://github.com/Shegsdev/fun_with_functions.git
 
 ---
 
-##### To run an exercise
+#### To run an exercise
 Be sure you have Node installed. See this [link](https://nodejs.org) if you don't.
 
 ```
