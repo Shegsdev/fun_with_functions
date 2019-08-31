@@ -10,6 +10,11 @@
 
 */
 
+/**
+* @param int
+* @return func
+
+*/
 function identityf(arg) {
   return function() {
     return arg;
@@ -18,4 +23,4 @@ function identityf(arg) {
 
 let three = identityf(3);
 
-require('../helpers').log(three());
+// require('../helpers').log(three());

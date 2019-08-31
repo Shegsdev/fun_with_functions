@@ -14,10 +14,16 @@
 
 */
 
-const add = require('./ch_01').add;
-const mul = require('./ch_01').mul;
+const add = require('./ex_01').add;
+const mul = require('./ex_01').mul;
 const log = require('../helpers').log;
 
+
+/**
+* @param func
+* @return func
+
+*/
 function liftf(binary) {
   return function(arg) {
     return function(next) {
@@ -31,5 +37,9 @@ function liftf(binary) {
 
 let addf = liftf(add);
 
-log(addf(3)(4));
-log(liftf(mul)(5)(6));
+// log(addf(3)(4));
+// log(liftf(mul)(5)(6));
+
+module.exports = {
+  liftf,
+}
