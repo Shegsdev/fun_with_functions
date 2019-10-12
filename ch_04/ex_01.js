@@ -27,7 +27,7 @@ function from(start) {
 	let next = start;
   return function() {
   	next += 1;
-  	return next;
+  	return next - 1;
   }
 }
 
@@ -37,3 +37,6 @@ let index = from(0)
 // log(index())
 // log(index())
 
+module.exports = {
+  from,
+}
